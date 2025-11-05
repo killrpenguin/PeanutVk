@@ -1,44 +1,5 @@
-This is an example project using CMake.
+This project is an attempt to convert [The Chernos](https://www.youtube.com/@TheCherno) [Walnut template](https://github.com/StudioCherno/Walnut/tree/3b8e414fdecfc6c8b58816106fe8d912bd172e31) to CMake and C++23/Vulkan-Hpp.
 
-The requirements are:
-
-- CMake 3.11 or better; 3.14+ highly recommended.
-- A C++17 compatible compiler
-- The Boost libararies (header only part is fine)
-- Git
-- Doxygen (optional)
-
-To configure:
-
-```bash
-cmake -S . -B build
-```
-
-Add `-GNinja` if you have Ninja.
-
-To build:
-
-```bash
-cmake --build build
-```
-
-To test (`--target` can be written as `-t` in CMake 3.15+):
-
-```bash
-cmake --build build --target test
-```
-
-To build docs (requires Doxygen, output in `build/docs/html`):
-
-```bash
-cmake --build build --target docs
-```
-
-To use an IDE, such as Xcode:
-
-```bash
-cmake -S . -B xbuild -GXcode
-cmake --open xbuild
-```
-
-The CMakeLists show off several useful design patterns for CMake.
+All credit for the layout of the project and a large portion of the code goes to him. 
+I've adopted a lot of his work as a starting point. Even once this is my own code his knowledge and experience
+made this project possible.
