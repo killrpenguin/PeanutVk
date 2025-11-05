@@ -1,0 +1,49 @@
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+/usr/bin/cmake -S/home/user/Programming/cpp_dev/PeanutVk -B/home/user/Programming/cpp_dev/PeanutVk/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/user/Programming/cpp_dev/PeanutVk/build/CMakeFiles /home/user/Programming/cpp_dev/PeanutVk/build//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+/usr/bin/gmake  -f _deps/fmtlib-build/CMakeFiles/fmt.dir/build.make _deps/fmtlib-build/CMakeFiles/fmt.dir/depend
+gmake[2]: Entering directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+cd /home/user/Programming/cpp_dev/PeanutVk/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/user/Programming/cpp_dev/PeanutVk /home/user/Programming/cpp_dev/PeanutVk/build/_deps/fmtlib-src /home/user/Programming/cpp_dev/PeanutVk/build /home/user/Programming/cpp_dev/PeanutVk/build/_deps/fmtlib-build /home/user/Programming/cpp_dev/PeanutVk/build/_deps/fmtlib-build/CMakeFiles/fmt.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+/usr/bin/gmake  -f _deps/fmtlib-build/CMakeFiles/fmt.dir/build.make _deps/fmtlib-build/CMakeFiles/fmt.dir/build
+gmake[2]: Entering directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+gmake[2]: Nothing to be done for '_deps/fmtlib-build/CMakeFiles/fmt.dir/build'.
+gmake[2]: Leaving directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+[ 16%] Built target fmt
+/usr/bin/gmake  -f imgui/CMakeFiles/imgui.dir/build.make imgui/CMakeFiles/imgui.dir/depend
+gmake[2]: Entering directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+cd /home/user/Programming/cpp_dev/PeanutVk/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/user/Programming/cpp_dev/PeanutVk /home/user/Programming/cpp_dev/PeanutVk/imgui /home/user/Programming/cpp_dev/PeanutVk/build /home/user/Programming/cpp_dev/PeanutVk/build/imgui /home/user/Programming/cpp_dev/PeanutVk/build/imgui/CMakeFiles/imgui.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+/usr/bin/gmake  -f imgui/CMakeFiles/imgui.dir/build.make imgui/CMakeFiles/imgui.dir/build
+gmake[2]: Entering directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+gmake[2]: Nothing to be done for 'imgui/CMakeFiles/imgui.dir/build'.
+gmake[2]: Leaving directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+[ 66%] Built target imgui
+/usr/bin/gmake  -f src/CMakeFiles/Framework.dir/build.make src/CMakeFiles/Framework.dir/depend
+gmake[2]: Entering directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+cd /home/user/Programming/cpp_dev/PeanutVk/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/user/Programming/cpp_dev/PeanutVk /home/user/Programming/cpp_dev/PeanutVk/src /home/user/Programming/cpp_dev/PeanutVk/build /home/user/Programming/cpp_dev/PeanutVk/build/src /home/user/Programming/cpp_dev/PeanutVk/build/src/CMakeFiles/Framework.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+/usr/bin/gmake  -f src/CMakeFiles/Framework.dir/build.make src/CMakeFiles/Framework.dir/build
+gmake[2]: Entering directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+gmake[2]: Nothing to be done for 'src/CMakeFiles/Framework.dir/build'.
+gmake[2]: Leaving directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+[ 88%] Built target Framework
+/usr/bin/gmake  -f apps/CMakeFiles/app.dir/build.make apps/CMakeFiles/app.dir/depend
+gmake[2]: Entering directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+cd /home/user/Programming/cpp_dev/PeanutVk/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/user/Programming/cpp_dev/PeanutVk /home/user/Programming/cpp_dev/PeanutVk/apps /home/user/Programming/cpp_dev/PeanutVk/build /home/user/Programming/cpp_dev/PeanutVk/build/apps /home/user/Programming/cpp_dev/PeanutVk/build/apps/CMakeFiles/app.dir/DependInfo.cmake "--color="
+gmake[2]: Leaving directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+/usr/bin/gmake  -f apps/CMakeFiles/app.dir/build.make apps/CMakeFiles/app.dir/build
+gmake[2]: Entering directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+[ 94%] Linking CXX executable app
+cd /home/user/Programming/cpp_dev/PeanutVk/build/apps && /usr/bin/cmake -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=1
+/usr/lib/llvm/21/bin/clang++ -g CMakeFiles/app.dir/app.cpp.o -o app  -Wl,-rpath,/usr/bin/vulkan-sdk-1.3.290.0/lib ../src/libFramework.a ../imgui/libimgui.a ../_deps/fmtlib-build/libfmtd.a /usr/lib64/libglfw.so.3.4 /usr/bin/vulkan-sdk-1.3.290.0/lib/libvulkan.so
+/usr/bin/x86_64-pc-linux-gnu-ld.bfd: ../imgui/libimgui.a(imgui_impl_glfw.cpp.o): undefined reference to symbol 'XInternAtom'
+/usr/bin/x86_64-pc-linux-gnu-ld.bfd: /usr/lib64/libX11.so.6: error adding symbols: DSO missing from command line
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[2]: *** [apps/CMakeFiles/app.dir/build.make:105: apps/app] Error 1
+gmake[2]: Leaving directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+gmake[1]: *** [CMakeFiles/Makefile2:274: apps/CMakeFiles/app.dir/all] Error 2
+gmake[1]: Leaving directory '/home/user/Programming/cpp_dev/PeanutVk/build'
+gmake: *** [Makefile:91: all] Error 2
